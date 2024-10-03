@@ -2,12 +2,13 @@
 
 int main()
 {
-  EngineInitDescription description;
-  description.windowWidth = 640;
-  description.windowHeight = 480;
+    graviton::EngineInitDescription description;
+    description.windowWidth = 640;
+    description.windowHeight = 480;
+    description.windowTitle = "Test";
 
-  Engine::GetInstance()->init(description);
-  Engine::GetInstance()->run();
+    graviton::Engine::GetInstance()->init(description);
+    graviton::Engine::GetInstance()->run();
 
-  return 0;
+    return 0;
 }
